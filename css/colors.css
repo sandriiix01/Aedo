@@ -1,0 +1,48 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #4a3f35; /* Marrón oscuro (encabezado y pie) */
+    --secondary-color: #6b5647; /* Marrón claro (secciones) */
+    --accent-color: #c5a880; /* Dorado claro (detalles y botones) */
+    --text-color: #333; /* Texto principal */
+    --background-color: #f5f5f5; /* Fondo general */
+  }
+  
+  /* Tipografías */
+  body {
+    font-family: 'Lora', serif; /* Para texto */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Cinzel', serif; /* Encabezados */
+    color: var(--primary-color);
+  }
+  
+  /* Links */
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Botones */
+  button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: var(--primary-color);
+  }
+  
