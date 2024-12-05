@@ -1,0 +1,54 @@
+/* Tipografía para títulos */
+h3, h4, h5, h6 {
+    font-family: "Diphylleia", sans-serif;
+    color: #31D9C8;
+    margin: 0;
+}
+h1 {
+    font-family: "Diphylleia", sans-serif;
+    font-size: 4rem;
+    color: #31D9C8;
+    margin-left: 4em;
+}
+h2 {
+  font-family: "Diphylleia", sans-serif;
+  font-size: 25px;
+  color: #31D9C8;
+  margin-bottom: 15px;
+}
+/* Tipografía para enlaces */
+nav {
+    font-family: "Diphylleia", sans-serif;
+    font-size: 25px;
+}
+
+/* Tipografía de botones */
+button {
+    font-family: "Baskervville", serif;
+}
+
+/* Tipografía general */
+body {
+    font-family: "Baskervville", serif;
+    font-size: px;
+}
+
+.baskervville-regular {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .baskervville-regular-italic {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .diphylleia-regular {
+    font-family: 'Diphylleia', serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+

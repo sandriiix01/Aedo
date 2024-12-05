@@ -1,81 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Novela Visual</title>
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/parallax.css">
-  <link rel="stylesheet" href="styles/menu.css">
-  <link rel="stylesheet" href="styles/colors.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Diphylleia&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" /> 
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+   
 </head>
+
 <body>
-  <!-- Cabecera con menú -->
-  <header>
-    <div class="menu-hamburguesa" onclick="toggleMenu()">
-      &#9776;
-    </div>
-    <nav id="menu" class="menu-lateral">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="producto.html">Producto</a></li>
-        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <h1>Aedo</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="producto.html">Producto</a>
+            <a href="quienes-somos.html">Quiénes Somos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-  <!-- Sección Home -->
-  <section id="home" class="parallax" style="background-image: url('assets/images/illustration1.jpg');">
-    <div class="content">
-      <h1>Bienvenido a la Novela Visual</h1>
-      <p>Un mundo lleno de historias y aventuras que te atraparán desde el primer instante.</p>
-    </div>
-  </section>
-  <section class="text-section">
-    <p>Explora un relato único lleno de magia, misterio, y personajes inolvidables.</p>
-  </section>
+    <main>
+        <!-- Sección 1 -->
+        <section class="section parallax" style="background-image: url('img/imagen1.jpg');">
+            <div class="section-content">
+                <h2>Capítulo 1</h2>
+                <p>Una breve descripción del primer capítulo de la novela visual.</p>
+            </div>
+        </section>
 
-  <!-- Repeticiones -->
-  <section class="parallax" style="background-image: url('assets/images/illustration2.jpg');">
-    <div class="content">
-      <h1>Capítulo 1</h1>
-    </div>
-  </section>
-  <section class="text-section">
-    <p>Sumérgete en los secretos del mundo fantástico que hemos creado.</p>
-  </section>
+        <!-- Sección 2 -->
+        <section class="section">
+            <h2>Capítulo 2</h2>
+            <p>Una breve descripción del segundo capítulo de la novela visual.</p>
+        </section>
 
-  <section class="parallax" style="background-image: url('assets/images/illustration3.jpg');">
-    <div class="content">
-      <h1>Capítulo 2</h1>
-    </div>
-  </section>
-  <section class="text-section">
-    <p>Descubre los personajes que te acompañarán en este viaje épico.</p>
-  </section>
+        <!-- Sección 3 -->
+        <section class="section parallax" style="background-image: url('img/imagen2.jpg');">
+            <div class="section-content">
+                <h2>Capítulo 3</h2>
+                <p>Una breve descripción del tercer capítulo de la novela visual.</p>
+            </div>
+        </section>
 
-  <section class="parallax" style="background-image: url('assets/images/illustration4.jpg');">
-    <div class="content">
-      <h1>Capítulo 3</h1>
-    </div>
-  </section>
-  <section class="text-section">
-    <p>El desenlace que siempre recordarás.</p>
-  </section>
+        <!-- Sección 4 -->
+        <section class="section">
+            <h2>Capítulo 4</h2>
+            <p>Una breve descripción del cuarto capítulo de la novela visual.</p>
+        </section>
+    </main>
 
-  <!-- Botón para subir -->
-  <button id="scroll-to-top" onclick="scrollToTop()">⬆️</button>
+    <!-- Botón para volver arriba -->
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
 
-  <!-- Pie de página -->
-  <footer>
-    <p>Contacto: contacto@novelavisual.com</p>
-    <p>Teléfono: +123 456 789</p>
-    <p>Derechos Reservados 2024</p>
-  </footer>
+    <!-- Pie de página -->
+    <footer>
+        <p>Contacto: email@novelavisual.com | Teléfono: +123 456 789</p>
+        <p>© 2024 Mi Novela Visual</p>
+    </footer>
 
-  <script src="scripts/menu.js"></script>
-  <script src="scripts/scrollButton.js"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
+
