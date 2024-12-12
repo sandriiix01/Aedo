@@ -1,4 +1,11 @@
 /* Tipografía para títulos */
+main {
+  color: #31D9C8;
+}
+p {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
 h3, h4, h5, h6 {
     font-family: "Diphylleia", sans-serif;
     color: #31D9C8;
@@ -8,7 +15,7 @@ h1 {
     font-family: "Diphylleia", sans-serif;
     font-size: 4rem;
     color: #31D9C8;
-    margin-left: 4em;
+   
 }
 h2 {
   font-family: "Diphylleia", sans-serif;
@@ -30,7 +37,8 @@ button {
 /* Tipografía general */
 body {
     font-family: "Baskervville", serif;
-    font-size: px;
+    font-size: 16px;
+    color:#fafafa;
 }
 
 .baskervville-regular {
