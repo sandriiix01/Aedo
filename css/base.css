@@ -5,8 +5,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 8px 20px  #31D9C8;;
-  width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
+  box-shadow: 0px 8px 20px  #31D9C8;
+   width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
   height: auto; /* Hace que la altura del encabezado se ajuste al contenido */
   position: relative; /* Para evitar solapamientos con el contenido */
 }

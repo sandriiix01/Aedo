@@ -9,7 +9,10 @@ main {
     header {
       flex-direction: column;
       margin-top: -20px;
-      padding: 60px;
+      padding-top: 60px;
+      padding-right: 60px;
+      padding-bottom: 60px;
+      padding-left: 20px;
       height: auto; /* Ajusta dinámicamente la altura */
       width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
     }
@@ -24,7 +27,10 @@ main {
   @media (max-width: 768px) {
     header {
       margin-top: -20px;
-      padding: 60px; /* Ajusta el relleno del encabezado */
+      padding-top: 60px;
+      padding-right: 60px;
+      padding-bottom: 60px;
+      padding-left: 20px;
       height: auto; /* Ajusta la altura dinámicamente */
     }
   
@@ -37,7 +43,10 @@ main {
   @media (max-width: 576px) {
     header {
       margin-top: -20px;
-      padding: 60px;
+      padding-top: 60px;
+      padding-right: 60px;
+      padding-bottom: 60px;
+      padding-left: 20px;
       height: auto; /* Ajusta dinámicamente la altura para cubrir el contenido */
     }
   
