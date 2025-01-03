@@ -1,0 +1,16 @@
+.DS_Store
+
+/assets/images/*
+
+/assets/images/*.png
+/assets/images/*.jpg
+/assets/images/*.jpeg
+/assets/images/*.gif
+
+!assets/images/.gitkeep
+
+*.log
+*.cache
+
+dist/
+node_modules/

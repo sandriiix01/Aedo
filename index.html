@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="css/index.css">
-
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Diphylleia&display=swap" rel="stylesheet">
@@ -16,10 +16,41 @@
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-   
+    
+    <style>
+        /* Estilos para el video a pantalla completa */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header {
+            position: relative;
+            z-index: 2; /* Asegura que el header esté encima del video */
+        }
+
+        /* Otros estilos pueden ir aquí */
+    </style>
 </head>
 
 <body>
+    <!-- Video de fondo a pantalla completa -->
+    <video autoplay muted loop>
+        <source src="https://ik.imagekit.io/k2u93a3tvq/banner%20aedo_1.mp4?updatedAt=1735937382190" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
     <header>
         <div class="logo">
             <h1>Aedo</h1>
@@ -34,7 +65,7 @@
 
     <main>
         <!-- Sección 1 -->
-        <section class="section parallax" style="background-image: url('img/imagen1.jpg');">
+        <section class="section parallax" id="capitulo-1" style="background-image: url('img/imagen1.jpg');">
             <div class="section-content">
                 <h2>Capítulo 1</h2>
                 <p>Una breve descripción del primer capítulo de la novela visual.</p>
@@ -42,13 +73,13 @@
         </section>
 
         <!-- Sección 2 -->
-        <section class="section">
+        <section class="section" id="capitulo-2">
             <h2>Capítulo 2</h2>
             <p>Una breve descripción del segundo capítulo de la novela visual.</p>
         </section>
 
         <!-- Sección 3 -->
-        <section class="section parallax" style="background-image: url('img/imagen2.jpg');">
+        <section class="section parallax" id="capitulo-3" style="background-image: url('img/imagen2.jpg');">
             <div class="section-content">
                 <h2>Capítulo 3</h2>
                 <p>Una breve descripción del tercer capítulo de la novela visual.</p>
@@ -56,7 +87,7 @@
         </section>
 
         <!-- Sección 4 -->
-        <section class="section">
+        <section class="section" id="capitulo-4">
             <h2>Capítulo 4</h2>
             <p>Una breve descripción del cuarto capítulo de la novela visual.</p>
         </section>
@@ -78,4 +109,3 @@
     </script>
 </body>
 </html>
-

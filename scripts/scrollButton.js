@@ -2,7 +2,7 @@ const scrollButton = document.getElementById('scroll-to-top');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 200) {
-    scrollButton.style.display = 'block';
+    Button.style.display = 'block';
   } else {
     scrollButton.style.display = 'none';
   }
@@ -11,3 +11,6 @@ window.addEventListener('scroll', () => {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+const scrollButton = document.getElementById('scroll-to-top');
+
+
