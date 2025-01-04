@@ -1,0 +1,174 @@
+/* Estilo del encabezado */
+header {
+  background: linear-gradient(to bottom, rgb(0, 5, 26), rgba(8, 0, 250, 0));
+  
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
+  height: auto; /* Hace que la altura del encabezado se ajuste al contenido */
+  position: fixed; /* Para evitar solapamientos con el contenido */
+  z-index: 10; 
+}
+
+/* Contenedor principal */
+main {
+  flex: 1; /* Hace que el contenido principal empuje el footer hacia abajo */
+  margin-top: px; /* Asegura que haya espacio debajo del encabezado */
+  padding: px;
+  background-color:#000118; /* Puedes ajustarlo si es necesario */
+  position: relative;
+  z-index: 1; /* Asegura que el contenido principal esté encima del video */
+}
+
+
+/* Asegurar que el contenedor principal ocupa toda la altura */
+.section {
+  margin-top: px; /* Ajusta según la altura del encabezado en pantallas grandes */
+  padding: 20px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color:#000118; /* Puedes ajustarlo si es necesario */
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--color-black);
+
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  position: relative;
+  background: linear-gradient(to top, rgba(0, 5, 26, 0.348), rgba(8, 0, 250, 0));
+ 
+}
+
+/* Botón para volver arriba */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #4CAF50; /* Color del botón */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  display: none; /* Oculto inicialmente */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background-color: #45a049;
+}
+
+
+/* Estilos para el video a pantalla completa */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Permite el scroll vertical */
+}
+
+
+main {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido principal esté encima del video */
+}
+
+.section {
+    position: relative;
+    padding: 0; /* Elimina el padding para que el video ocupe toda la sección */
+    min-height: 100vh; /* Asegura que cada sección ocupe al menos la altura de la ventana */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    padding: 40px 40px;
+}
+
+.section2 {
+  position: relative;
+    z-index: 2; /* Asegura que el contenido de la sección esté encima del video */
+    padding: 10px 10px; /* Añade espacio para que el contenido no esté pegado al borde */
+  background-color: #CAC9F1;
+}
+.section3 {
+  margin-top: 30rem;
+  min-height: 55vh;
+  position: relative;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  z-index: 3;
+}
+.section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra toda la sección */
+    z-index: 1; /* Asegura que el video esté detrás del contenido */
+}
+
+.section-content {
+    position: relative;
+    margin-top: 5rem;
+    z-index: 2; /* Asegura que el contenido de la sección esté encima del video */
+    padding: 60px 60px; /* Añade espacio para que el contenido no esté pegado al borde */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.item {
+  background-color: rgba(8, 0, 250, 0);
+  padding: 20px;
+  text-align: center;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    z-index: 3; /* Asegura que el texto esté encima del video */
+}
+
+.video-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.video-text p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.video-text button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #9D9BFB;
+    color: white;
+    border: 1rem ;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.video-text button:hover {
+    background-color: #45a049;
+}
