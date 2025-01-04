@@ -18,7 +18,7 @@ a {
 a:hover {
   color: var(--color-secondary);
 }
-
+ 
 /* Botones */
 button {
   background-color: var(--color-primary);
