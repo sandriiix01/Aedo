@@ -20,13 +20,14 @@ h1 {
     margin-right: 40px;
     font-family: "Diphylleia", sans-serif;
     font-size: 4rem;
-    color: #d9ebe9;
+    color: #ffffff;
    
 }
+
 h2 {
   font-family: "Diphylleia", sans-serif;
-  font-size: 25px;
-  color: #D9FEFA;
+  font-size: 80px;
+  color: #57b6ac;
   margin-bottom: 15px;
 }
 h3 {
@@ -52,7 +53,7 @@ button {
 /* Tipografía general */
 body {
     font-family: "Baskervville", serif;
-    font-size: 16px;
+    font-size: 20px;
     color:#fafafa;
 }
 

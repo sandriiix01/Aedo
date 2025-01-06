@@ -1,6 +1,6 @@
 /* Estilo del encabezado */
 header {
-  background: linear-gradient(to bottom, rgb(0, 5, 26), rgba(8, 0, 250, 0));
+  background: linear-gradient(to bottom, rgb(0, 5, 26),rgba(0, 5, 26, 0.793), rgba(0, 5, 26, 0.481), rgba(8, 0, 250, 0));
   
   padding: 20px;
   display: flex;
@@ -39,14 +39,15 @@ html, body {
 /* Pie de página */
 footer {
   background-color: var(--color-black);
-
   text-align: center;
   padding: 15px;
+  margin-top: 60px;
   font-size: 14px;
   position: relative;
+  z-index: 1; /* Asegura que el footer esté por encima de otros elementos */
   background: linear-gradient(to top, rgba(0, 5, 26, 0.348), rgba(8, 0, 250, 0));
- 
 }
+
 
 /* Botón para volver arriba */
 .back-to-top {
@@ -110,6 +111,52 @@ main {
   color: white;
   text-align: left;
   z-index: 3;
+}
+
+.section01 {
+  display: grid; 
+  grid-template-columns: 1fr auto; /* El primer elemento ocupará todo el espacio disponible, el segundo (imagen) será de tamaño automático */ 
+  align-items: center; /* Alinea los elementos en el centro verticalmente */
+  min-height: 100vh;
+  padding-left: 60px;
+  padding-top: 60px;
+}
+
+.text01{
+  display: flex; 
+  margin-top: -30em;
+  flex-direction: column; /* Coloca los elementos uno debajo del otro */ 
+  justify-content: center; /* Alinea verticalmente el contenido */
+
+}
+.section02 {
+  display: grid; 
+  grid-template-columns: auto 1fr; /* La imagen ocupará el espacio automático, el texto ocupará el resto */
+  align-items: center; /* Alinea los elementos en el centro verticalmente */
+  min-height: 100vh;
+  padding-right: 60px;
+  padding-top: 60px;
+  background-color: #CAC9F1;
+}
+
+.text02 {
+  display: flex; 
+  flex-direction: column; /* Coloca los elementos uno debajo del otro */ 
+  justify-content: center; /* Alinea verticalmente el contenido */
+  align-items: flex-end; /* Alinea el contenido a la derecha */
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+.fixed-image{
+  width: 600px; /* Cambia el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  position: relative; /* Posiciona la imagen de forma absoluta */
+  top: 50px; /* Ajusta la posición vertical */
+  bottom: 50px; /* Ajusta la posición vertical */
+  left: 50px; /* Ajusta la posición horizontal */
+  right: 0px;
+
+
 }
 .section video {
     position: absolute;
