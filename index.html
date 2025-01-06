@@ -16,8 +16,7 @@
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-   
-
+</head>
 <body>
 
     <header>
@@ -53,25 +52,32 @@
                 <div class="item">Parte 4</div>
             </div>
         </section>
-
-        <!-- Sección 2 -->
-        <section class="section01"> 
-            <div class="text01"> 
-            <h2>SoCap 2</h2> 
-            <p>Información sobre el equipo detrás de la novela visual.</p> 
-        </div> 
-            <img src="https://ik.imagekit.io/k2u93a3tvq/Rowan.png?updatedAt=1736163886072" alt="Marca Personal" class="fixed-image">
-        </section>
-
-        <!-- Sección 3 -->
-        <section class="section02"> 
-            <img src="https://ik.imagekit.io/k2u93a3tvq/Ilustracio%CC%81n_sin_ti%CC%81tulo.png?updatedAt=1736160751405" alt="Marca Personal" class="fixed-image">
-            <div class="text02"> 
-            <h2>Cap 3</h2> 
-            <p>Información sobre el equipo detrás de la novela visual.</p> 
-        </div> 
-           
-        </section>
+        <!-- Carousel -->
+        <div class="carousel">
+            <button class="carousel-button prev">❮</button>
+            <div class="carousel-track-container">
+              <div class="carousel-track">
+                <!-- Sección 2 -->
+                <section class="slide section01"> 
+                  <div class="text01"> 
+                    <h2>SoCap 2</h2> 
+                    <p>Información sobre el equipo detrás de la novela visual.</p> 
+                  </div> 
+                  <img src="https://ik.imagekit.io/k2u93a3tvq/Rowan.png?updatedAt=1736163886072" alt="Marca Personal" class="fixed-image-right">
+                </section>
+          
+                <!-- Sección 3 -->
+                <section class="slide section02"> 
+                  <img src="https://ik.imagekit.io/k2u93a3tvq/Ilustracio%CC%81n_sin_ti%CC%81tulo.png?updatedAt=1736160751405" alt="Marca Personal" class="fixed-image-left">
+                  <div class="text02"> 
+                    <h2>Cap 3</h2> 
+                    <p>Información sobre el equipo detrás de la novela visual.</p> 
+                  </div> 
+                </section>
+              </div>
+            </div>
+            <button class="carousel-button next">❯</button>
+          </div>
 
         <!-- Sección 4 -->
         <section class="section" id="capitulo-4">
@@ -96,6 +102,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
+      <script src="scripts/carousel.js"></script> <!-- Enlace al archivo JavaScript -->
 </body>
 </html>
 

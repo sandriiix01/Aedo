@@ -113,14 +113,6 @@ main {
   z-index: 3;
 }
 
-.section01 {
-  display: grid; 
-  grid-template-columns: 1fr auto; /* El primer elemento ocupará todo el espacio disponible, el segundo (imagen) será de tamaño automático */ 
-  align-items: center; /* Alinea los elementos en el centro verticalmente */
-  min-height: 100vh;
-  padding-left: 60px;
-  padding-top: 60px;
-}
 
 .text01{
   display: flex; 
@@ -129,18 +121,10 @@ main {
   justify-content: center; /* Alinea verticalmente el contenido */
 
 }
-.section02 {
-  display: grid; 
-  grid-template-columns: auto 1fr; /* La imagen ocupará el espacio automático, el texto ocupará el resto */
-  align-items: center; /* Alinea los elementos en el centro verticalmente */
-  min-height: 100vh;
-  padding-right: 60px;
-  padding-top: 60px;
-  background-color: #CAC9F1;
-}
 
 .text02 {
   display: flex; 
+  margin-top: 10em;
   flex-direction: column; /* Coloca los elementos uno debajo del otro */ 
   justify-content: center; /* Alinea verticalmente el contenido */
   align-items: flex-end; /* Alinea el contenido a la derecha */
@@ -155,8 +139,25 @@ main {
   bottom: 50px; /* Ajusta la posición vertical */
   left: 50px; /* Ajusta la posición horizontal */
   right: 0px;
+}
 
-
+.fixed-image-right{
+  width: 700px; /* Cambia el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  position: relative; /* Posiciona la imagen de forma absoluta */
+  top: 50px; /* Ajusta la posición vertical */
+  bottom: 50px; /* Ajusta la posición vertical */
+  left: 50px; /* Ajusta la posición horizontal */
+  margin-right: 50px;
+}
+.fixed-image-left{
+  width: 600px; /* Cambia el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  position: relative; /* Posiciona la imagen de forma absoluta */
+  top: 50px; /* Ajusta la posición vertical */
+  bottom: 50px; /* Ajusta la posición vertical */
+  margin-left: 50px; /* Ajusta la posición horizontal */
+  right: 50px;
 }
 .section video {
     position: absolute;
@@ -218,4 +219,67 @@ main {
 
 .video-text button:hover {
     background-color: #45a049;
+}
+ /* carousel */
+ .carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Asegúrate de que el ancho del track sea 100% */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.section01, .section02 {
+  display: grid; 
+  align-items: center; /* Alinea los elementos en el centro verticalmente */
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.section01 {
+  grid-template-columns: 1fr auto; /* El primer elemento ocupará todo el espacio disponible, el segundo (imagen) será de tamaño automático */ 
+  padding-left: 100px;
+}
+
+.section02 {
+  grid-template-columns: auto 1fr; /* La imagen ocupará el espacio automático, el texto ocupará el resto */
+  padding-right: 100px;
+  padding-left: 20px;
+  background-color: #CAC9F1;
 }
