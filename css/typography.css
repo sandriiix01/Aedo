@@ -2,9 +2,30 @@
 main {
   color: #000118;
 }
+.subtitle{
+  font-size: 2rem;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  color: #ffffff;
+}
 p {
   color: #ffffff;
   margin-bottom: 10px;
+  letter-spacing: 0.2 em;
+  line-height: 1.2;
+}
+.p1 {
+  color:#000118;
+  padding-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  letter-spacing: 0.1em;
+}
+.p2{
+  margin-top: 30px;
+}
+.p3 {
+  color:#000118;
 }
 h3, h4, h5, h6 {
     font-family: "Diphylleia", sans-serif;

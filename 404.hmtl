@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Página no encontrada</title>
+    <link rel="stylesheet" href="css/404.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Diphylleia&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Aedo</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="producto.html">Producto</a>
+            <a href="quienes-somos.html">Quiénes Somos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <section class="error-container"> 
+        <div class="text"> 
+            <h1>Error 404</h1>
+            <p>Lo sentimos, la página que estás buscando no se pudo encontrar.</p>
+        </div> 
+        <img src="https://ik.imagekit.io/k2u93a3tvq/Ilustracio%CC%81n_sin_ti%CC%81tulo%20(4).png?updatedAt=1736279462673" alt="Error 404" class="fixed-image">
+        <a href="index.html" class="back-home">Volver a la página principal</a>
+    </section>
+</body>
+</html>

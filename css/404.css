@@ -1,0 +1,125 @@
+/* Estilo del encabezado */
+header {
+    background: linear-gradient(to bottom, rgb(0, 5, 26), rgba(0, 5, 26, 0.793), rgba(0, 5, 26, 0.481), rgba(8, 0, 250, 0));
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
+    height: auto; /* Hace que la altura del encabezado se ajuste al contenido */
+    position: fixed; /* Para evitar solapamientos con el contenido */
+    z-index: 10;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    color: white;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: "Diphylleia", sans-serif;
+    font-size: 4rem;
+    color: #ffffff;
+  }
+  
+  p {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: var(--color-black);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    position: relative;
+    z-index: 1; /* Asegura que el footer esté por encima de otros elementos */
+    background: linear-gradient(to top, rgba(0, 5, 26, 0.348), rgba(8, 0, 250, 0));
+  }
+  
+  /* Estilos para el video a pantalla completa */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Permite el scroll vertical */
+  }
+  nav {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-family: "Diphylleia", sans-serif;
+    font-size: 25px;
+  }
+  a{
+    margin-right: 10px;
+    margin-right: 10px;
+  }
+  
+  .fixed-image {
+    width: 700px; /* Cambia el tamaño de la imagen */
+    position: relative; /* Posiciona la imagen de forma absoluta */
+    margin-bottom: 20px; /* Junta más la imagen al texto */
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    justify-content: center; /* Alinea verticalmente el contenido */
+  }
+  
+  /* Estilo para la página de error 404 */
+  .error-container {
+    padding-top: 5em; /* Ajusta el padding-top para evitar superposición con el header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Asegura que la sección ocupe al menos la altura de la ventana menos el header */
+    text-align: center;
+    background-color: #000118; /* Fondo oscuro */
+    color: white;
+  }
+  
+  .error-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Junta más la imagen al texto */
+  }
+  
+  .error-container h1 {
+    font-size: 5em;
+    margin: 0;
+  }
+  
+  .error-container p {
+    font-size: 1.5em;
+    margin: 20px 0;
+  }
+  
+  .back-home {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #9D9BFB;
+    color: white;
+    border: 1rem ;
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .back-home:hover {
+    background-color: #6663ed;
+  }

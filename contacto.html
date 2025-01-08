@@ -10,6 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Diphylleia&display=swap" rel="stylesheet">
 
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" /> 
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
 </head>
 
 <body>
@@ -29,13 +35,21 @@
         <section class="section-content">
             <h2>Contáctanos</h2>
             <p>Para cualquier consulta, no dudes en escribirnos.</p>
+            <form class="contact-form">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Descripción:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>Contacto: email@novelavisual.com | Teléfono: +123 456 789</p>
-        <p>© 2024 Mi Novela Visual</p>
+        <p>Contacto: aedo.info@gmail.com | Teléfono: +651 860 905</p>
+        <p>© 2024 Aedo</p>
     </footer>
 </body>
 </html>
-
